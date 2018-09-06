@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.singlescreenappproject.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:fontFamily="cursive"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textAlignment="center"
+        android:text="Excelsior Tours and Travels" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:fontFamily="serif-monospace"
+        android:textSize="15sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textAlignment="center"
+        android:text="Taking you to New Horizons..." />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/excelsior"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:background="@android:color/darker_gray"
+        android:autoLink="phone">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@drawable/call"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="3"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:text="+91 99999 88888"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:background="@android:color/darker_gray"
+        android:autoLink="email">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@drawable/email"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="3"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:text="excelsiortours@gmail.com"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:background="@android:color/darker_gray">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@drawable/hour"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="3"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:text="0800 - 2100"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:background="@android:color/darker_gray">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/info"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="3"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:text="We book the cheapest but promising holidays.
+To have the best time with loved ones, or even alone, contact us for jaw-dropping deals."/>
+    </LinearLayout>
+
+</LinearLayout>

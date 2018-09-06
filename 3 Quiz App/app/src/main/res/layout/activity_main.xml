@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizappproject.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The Pokemon Quiz"
+            android:gravity="center_horizontal"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            style="@style/question"
+            android:text="Question 1: What is the name of this Pokemon?"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/pikachu"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50dp">
+
+                <RadioButton
+                    style="@style/mcq"
+                    android:text="Charizard"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"/>
+
+                <RadioButton
+                    style="@style/mcq"
+                    android:id="@+id/answerOne"
+                    android:text="Pikachu"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"/>
+
+                <RadioButton
+                    style="@style/mcq"
+                    android:text="Togepi"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"/>
+
+                <RadioButton
+                    style="@style/mcq"
+                    android:id="@+id/bulba"
+                    android:text="Bulbasaur"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"/>
+        </RadioGroup>
+
+        <TextView
+            style="@style/divider"/>
+
+        <TextView
+            style="@style/question"
+            android:text="Question 2: Which of the following are starters?"/>
+
+        <CheckBox
+            style="@style/checkbox"
+            android:text="Starly"
+            android:id="@+id/starly"/>
+
+        <CheckBox
+            style="@style/checkbox"
+            android:text="Chimchar"
+            android:id="@+id/chimchar"/>
+
+        <CheckBox
+            style="@style/checkbox"
+            android:text="Bidoof"
+            android:id="@+id/bidoof"/>
+
+        <CheckBox
+            style="@style/checkbox"
+            android:text="Piplup"
+            android:id="@+id/piplup"/>
+
+        <TextView
+            style="@style/divider"/>
+
+        <TextView
+            style="@style/question"
+            android:text="Question 3: Name the region Rayquaza belongs to"/>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Region"
+            android:id="@+id/region"/>
+
+        <TextView
+            style="@style/divider"/>
+
+        <TextView
+            style="@style/question"
+            android:text="Question 4: What does Houndour evolve into?"/>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Name of Evolution"
+            android:id="@+id/houndour_evolution"/>
+
+        <TextView
+            style="@style/divider"/>
+
+        <TextView
+            style="@style/question"
+            android:text="Question 5: Which of the following is an 'eeveelution'?"/>
+
+        <CheckBox
+            style="@style/checkbox"
+            android:text="Glaceon"
+            android:id="@+id/glaceon"/>
+
+        <CheckBox
+            style="@style/checkbox"
+            android:text="Lumineon"
+            android:id="@+id/lumineon"/>
+
+        <CheckBox
+            style="@style/checkbox"
+            android:text="Espeon"
+            android:id="@+id/espeon"/>
+
+        <CheckBox
+            style="@style/checkbox"
+            android:text="Vaporeon"
+            android:id="@+id/vaporeon"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit Answers"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:onClick="showScore"/>
+    </LinearLayout>
+</ScrollView>

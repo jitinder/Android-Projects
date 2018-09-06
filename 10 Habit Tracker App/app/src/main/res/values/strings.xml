@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">HabitTrackerAppProject</string>
+    <string name="db_created">The Database is created</string>
+</resources>

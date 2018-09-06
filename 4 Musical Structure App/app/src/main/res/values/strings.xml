@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MusicAppProject</string>
+
+    <!-- Menu Items -->
+    <string name="menu_songs">Songs</string>
+    <string name="menu_albums">Albums</string>
+    <string name="menu_artists">Artists</string>
+    <string name="menu_playlists">Playlists</string>
+    <string name="menu_buy">Buy Music</string>
+    <string name="main_activity_info"> MAIN MENU \n \nUsed to select options to proceed with the application.</string>
+
+    <string name="now_playing">Now Playing</string>
+    <string name="now_playing_activity_info">NOW PLAYING \n \nThis activity shows the information of the song currently being played along with buttons to play/pause and go to the next song.</string>
+    <string name="songs_activity_info">MY SONGS \n \nThis activity displays the user\'s songs in a scrollable list that can be selected to play. The Now Playing TextView is clickable to go to the Now Playing Activity.</string>
+    <string name="album_activity_info">ALBUMS \n \nThis activity displays the user\'s albums in a scrollable list that can be clicked to show songs from that album.</string>
+    <string name="artist_activity_info">ARTISTS \n \nThis activity displays the artists the user\'s songs are composed by in a scrollable list that can be clicked to show songs from that artist.</string>
+    <string name="playlist_activity_info">PLAYLISTS \n \nThis activity displays the playlists made by the user in a scrollable list that can be clicked to show songs in that playlist.</string>
+    <string name="buy_activity_info">BUY MORE MUSIC \n \nThis activity opens an activity showing various songs/artists/albums the user can download. When checking out, the user has to pay for the chosen music. This Android Pay API can be used to allow this transaction to happen. </string>
+</resources>

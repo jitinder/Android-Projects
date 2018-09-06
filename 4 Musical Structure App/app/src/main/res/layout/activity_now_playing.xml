@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicappproject.NowPlaying">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/navi_button"
+                android:text="Home"
+                android:id="@+id/home"/>
+            <TextView
+                style="@style/navi_button"
+                android:text="Songs"
+                android:id="@+id/songs"/>
+            <TextView
+                style="@style/navi_button"
+                android:text="Albums"
+                android:id="@+id/albums"/>
+            <TextView
+                style="@style/navi_button"
+                android:text="Artists"
+                android:id="@+id/artists"/>
+            <TextView
+                style="@style/navi_button"
+                android:text="Playlists"
+                android:id="@+id/playlists"/>
+        </LinearLayout>
+
+        <TextView
+            style="@style/activity_info"
+            android:text="@string/now_playing_activity_info"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color1"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Song"
+                android:layout_weight="1"
+                android:id="@+id/last_song"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play/Pause"
+                android:layout_weight="1"
+                android:id="@+id/play_pause"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next Song"
+                android:layout_weight="1"
+                android:id="@+id/next_song"/>
+        </LinearLayout>
+</LinearLayout>
